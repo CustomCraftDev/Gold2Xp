@@ -1,31 +1,38 @@
-# @author DieFriiks / CustomCraftDev / undeaD_D
-# @link www.pokemon-online.xyz
+# @author undeaD_D, DieFriiks, Protom1234, PokemonOnline.xyz
+# @link http://www.pokemon-online.xyz/
 # @github https://github.com/CustomCraftDev/Gold2Xp
-debug: nope
 
 msg:
-  nopermission: '&c[Gold2Xp] you dont have permission to that command'
-  disable: '&c[Gold2Xp] was disabled'
-  reset: '&c[Gold2Xp] was reset'
-  reload: '&c[Gold2Xp] was reloaded'
+  nopermission: '&4you dont have permission to that command'
+  disable: '&4was disabled'
+  reset: '&4was reset'
+  reload: '&4was reloaded'
+  wrongitem: '&8rightclick with &eGold Ingot&8 to get &e7 Xp&8'
+  prefix: '&e[&8Gold2Xp&e] '
 
 event:
   block: 'GOLD_BLOCK'
   item: 'GOLD_INGOT'
+  location: false
   xp: 7
 
 help:
   info:
-    - 'Dont touch debug mode ...'
     - 'This help section can be deleted if you like ^^'
+    - ' '
+    - 'NEW !!! location toggle <-- if true drops the xp on top of the block, false gives it directly to the player who clicked'
+    - 'this new feature can be used to share xp between players ...'
+    - ' '
     - 'for block and item use bukkit Materials only'
     - 'https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html'
     - 'all messages support bukkit colorcodes ...'
     - 'http://www.minecraftforum.net/forums/support/server-support/tutorials-and-faqs/1940467-bukkit-colour-codes'
-    - 'if an update is available the plugin will not load itself, till it gets updated :P'
-    - 'if you have any questions, feel free to ask me on bukkit.org or later even on my website (curently under construction)'
-    - 'remember: have fun playing' 
-  cmd:
+    - ' '
+    - 'if an update is available there will be messages in console and ingame (if you have the right permission)'
+    - 'if you have any questions or found bugs, feel free to ask me on bukkit.org or even on my forum'
+    - ' '
+    - 'plugin idea by Protom1234 / coded by undeaD_D'
+  cmds:
     - '/g2x reload  <-- reloads the settings from config.yml'
     - '/g2x reset   <-- resets the config.yml to default and then basically calls /g2x reload'
     - '/g2x disable <-- disable Gold2Xp, till next reload/restart'
