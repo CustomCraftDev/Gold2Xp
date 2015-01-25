@@ -1,14 +1,14 @@
- name: Gold2Xp
- version: 1.0
- description: Requested Plugin
- author: DieFriiks
- authors: [undeaD_D] 
- website: http://www.pokemon-online.xyz/
- 
- main: xyz.diefriiks.gold2xp.Gold2xp
- database: false
- 
- commands:
-   g2x:
-     description: Gold2XP Admin Command
-     usage: /g2x <reset/reload/disable>
+name: Gold2Xp
+version: 2.0
+description: XP Converter
+author: undeaD_D
+authors: [undeaD_D, DieFriiks, Protom1234, PokemonOnline.xyz] 
+website: http://www.pokemon-online.xyz/
+
+main: xyz.diefriiks.gold2xp.Gold2xp
+database: false
+
+commands:
+  g2x:
+    description: Gold2XP Admin Command
+    usage: /g2x <reset/reload/disable>
